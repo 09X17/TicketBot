@@ -1,5 +1,6 @@
 const { Client, Collection, MessageEmbed } = require("discord.js");
 const Mongo = require("mongoose");
+const config = require("./Src/Config/Config.json");
 
 const client = new Client({
   disableMentions: "everyone",
@@ -11,18 +12,15 @@ const client = new Client({
   partials: ["MESSAGE", "CHANNEL", "USER", "GUILD_MEMBER"],
   presence: {
     status: "idle",
-    activities: [{ name: "Sim", type: "LISTENING" }],
+    activities: [{ name: "A Ticket Bot", type: "LISTENING" }],
   },
 });
 
 client.commands = new Collection();
 client.interactions = new Collection();
 client.cooldowns = new Collection();
-client.snipes = new Collection();
-client.editsnipes = new Collection();
 
-//   if(!MONGOURL) return;
-Mongo.connect(MONGOURL, {
+Mongo.connect(config.MONGOURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -40,4 +38,4 @@ Mongo.connection.on("err", (err) => {
   require(`./Src/Util/Handlers/${handler}`)(client);
 });
 
-client.login(TOKEN);
+client.login(config.TOKEN);
