@@ -18,7 +18,9 @@ The main file is the config.json file in which the following is found
 }
 ```
 
-TOKEN : Private token bot 
+#TOKEN `css
+Private token bot 
+```
 PREFIX : Prefix custom of the bot
 MONGOURL : MongoDb Connection URL
 OWNERS : Bot Owners ID
