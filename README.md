@@ -16,3 +16,5 @@ The main file is the config.json file in which the following is found
 
 }
 ```
+# Main Slash Commands
+https://cdn.discordapp.com/attachments/908529519516868688/909981272481366086/IMG_3477.png
