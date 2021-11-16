@@ -17,3 +17,5 @@ The main file is the config.json file in which the following is found
 }
 ```
 # Main Slash Commands
+/ticket-panel
+/ticket-close 
