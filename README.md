@@ -18,7 +18,8 @@ The main file is the config.json file in which the following is found
 }
 ```
 
-#TOKEN `css
+#TOKEN 
+`css
 Private token bot 
 ```
 PREFIX : Prefix custom of the bot
